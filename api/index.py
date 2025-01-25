@@ -46,3 +46,4 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Origin', '*')  # Enable CORS
         self.end_headers()
         self.wfile.write(json.dumps(response).encode)
+
